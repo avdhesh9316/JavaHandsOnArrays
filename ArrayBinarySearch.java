@@ -10,10 +10,10 @@ class ArrayBinarySearch {
 		System.out.print("Enter the key : ");
 		int key = sc.nextInt();
 		int i = 0;
-		while(arr[i] != key) {
+		while(arr[i] != key && i < N - 1) {
 			i++;
 		}
-		if (i >= N) {
+		if (i == N - 1) {
 			System.out.print("-1");
 		} else {
 			System.out.println("The Index of key is : " + i);
